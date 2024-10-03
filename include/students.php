@@ -30,7 +30,8 @@ class Student {
 		$row_count = $mydb->num_rows($cur);
 		return $row_count;
 	}
-		static function studentAuthentication($email,$h_pass){
+	
+	static function studentAuthentication($email,$h_pass){
 		global $mydb;
 		$mydb->setQuery("SELECT * FROM `tblstudent` WHERE `STUDUSERNAME` = '". $email ."' and `STUDPASS` = '". $h_pass ."'");
 		$cur = $mydb->executeQuery();

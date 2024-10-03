@@ -18,9 +18,9 @@ switch ($view) {
 	case 'edit' :
 		$content    = 'edit.php';		
 		break;
-    case 'view' :
-		$content    = 'view.php';		
-		break;
+    // case 'view' :
+	// 	$content    = 'view.php';		
+	// 	break;
 
 	default :
 		$content    = 'list.php';		

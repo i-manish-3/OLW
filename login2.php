@@ -136,7 +136,7 @@ if (isset($_SESSION['StudentID'])) {
 <body>
 
 <div class="container-login100">
-  <?php check_message(); ?>
+
   <div class="wrap-login100">
     
     <form class="login100-form" action="" method="POST"> 
@@ -195,11 +195,11 @@ if(isset($_POST['btnLogin'])){
     $res = $student::studentAuthentication($email, $h_upass);
     
     if ($res==true) {  
-      redirect(web_root."index.php");
+      header("Location: index.php");
       echo $_SESSION['StudentID'];
     } else {
       echo "<script>alert('Account does not exist! Please contact Administrator');</script>";
-      redirect (web_root."login2.php");
+      header("Location: login2.php");
     }
   }
 }

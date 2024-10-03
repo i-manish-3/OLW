@@ -8,23 +8,15 @@ session_start(); //before we store information of our member, we need to start f
 	}
 	//this function if session member is not set then it will be redirected to login.php
 	function confirm_logged_in() {
-		if (!logged_in()) {?>
-
-			<script type="text/javascript">
-				window.location = "login.php";
-			</script>
-
-		<?php
+		if (!logged_in()) {
+			header("Location: login.php");
+			exit();
 		}
 	}
 function admin_confirm_logged_in() {
-		if (@!$_SESSION['USERID']) {?>
-			<script type="text/javascript">
-				window.location ="login.php";
-			</script>
-			
-
-		<?php
+		if (!$_SESSION['USERID']) {
+			header("Location: login.php");
+			exit();
 		}
 	}
 
@@ -33,12 +25,9 @@ function admin_confirm_logged_in() {
         
 	}
 	function studconfirm_logged_in() {
-		if (!studlogged_in()) {?>
-			<script type="text/javascript">
-				window.location = "index.php";
-			</script>
-
-		<?php
+		if (!studlogged_in()) {
+			header("Location: login.php");
+			exit();
 		}
 	}
 

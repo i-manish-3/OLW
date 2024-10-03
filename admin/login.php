@@ -125,8 +125,6 @@ if (isset($_SESSION['USERID'])) {
         <div class="login-box">
             <h2>Login to Continue</h2>
 
-            <p><?php echo check_message(); ?></p>
-
             <form action="" method="POST">
                 <div class="form-group">
                     <input placeholder="Username" type="text" id="user_email" name="user_email" required>

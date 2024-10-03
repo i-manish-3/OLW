@@ -22,10 +22,6 @@ switch ($view) {
  		$title="Play Video"; 
 		$content    = 'playvideo.php';		
 		break;
-    case 'viewpdf' :
- 		$title="View File"; 
-		$content    = 'viewpdf.php';		
-		break;
     case 'uploadfile' :
 		$content    = 'uploadfiles.php';		
 		break;

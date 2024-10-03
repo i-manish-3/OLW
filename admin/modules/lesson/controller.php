@@ -55,24 +55,15 @@ switch ($action) {
 			$title  = $_POST['LessonTitle'];
 			$id = $_POST['LessonID'];
 			$category = $_POST['Category'];
-
- 
-				// $filename = UploadImage();
-				// $location = "files/". $filename ;
-
 				$lesson = new Lesson();
 				$lesson->LessonChapter = $chapter;
 				$lesson->LessonTitle   = $title;
 				$lesson->Category  = $category;
-				// $lesson->FileLocation  = $location;
 				$lesson->update($id); 
 
 				message("Lesson has been saved in the database.", "success");
 				redirect("index.php");
-		 
-
-			
-	 		
+			 		
 		}
 	}
 
@@ -85,9 +76,7 @@ switch ($action) {
 			$lesson->delete($id);
  
 			message("Lesson has been removed!","info");
-			redirect('index.php');
-		 
-		
+			redirect('index.php');	
 	}
 
 
@@ -104,11 +93,7 @@ switch ($action) {
 				$lesson->update($id); 
 
 				message("File has been updated in the database.", "success");
-				redirect("index.php");
-		 
-
-			
-	 		
+				redirect("index.php");	
 		}
 	}
 

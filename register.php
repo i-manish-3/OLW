@@ -116,7 +116,7 @@ if (isset($_SESSION['StudentID'])) {
 
 <div class="container">
   <p class="page-header">Sign Up</p>
-  <?php check_message(); ?>
+
   <form action="" method="POST" enctype="multipart/form-data" id="register-form">
     
     <div class="form-group">
@@ -173,7 +173,7 @@ if (isset($_POST['btnRegister'])) {
     $student->STUDPASS = sha1($_POST['PASS']); 
     $student->create();  
 
-    message("You are now successfully registered. You can login now!", "success");
-    redirect("register.php");
+    echo "<script>alert('Account Created');</script>";
+    redirect("login2.php");
 }
 ?>
