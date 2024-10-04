@@ -11,7 +11,6 @@ require_once(LIB_PATH.DS."function.php");
 require_once(LIB_PATH.DS."session.php");
 require_once(LIB_PATH.DS."accounts.php"); 
 require_once(LIB_PATH.DS."lessons.php");
-// require_once(LIB_PATH.DS."exercises.php"); 
 require_once(LIB_PATH.DS."students.php"); 
 require_once(LIB_PATH.DS."database.php");
 ?>

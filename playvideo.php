@@ -1,5 +1,5 @@
 <?php  
-  @$id = $_GET['id'];
+  $id = $_GET['id'];
     if($id==''){
   redirect("index.php");
 }

@@ -95,10 +95,6 @@ switch ($action) {
 	 		 	$user->delete($id);
 			 
 			message("User already Deleted!","info");
-			redirect('index.php');
-		// }
-		// }
-
-		
+			redirect('index.php');		
 	}
 ?>

@@ -73,7 +73,7 @@ require_once("include/initialize.php");
                                 <br>
                                 <p><?php echo '<td>' . $result->LessonTitle . '</td>'; ?></p>
                             </div>
-                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Read All</a>' ?></button>
+                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Watch Video</a>' ?></button>
                         </div>
                     <?php } ?>
                     <!-- end of single post -->
@@ -104,7 +104,7 @@ require_once("include/initialize.php");
                                 <p><?php
                                     echo '<td>' . $result->LessonTitle . '</td>'; ?></p>
                             </div>
-                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Read All</a>' ?></button>
+                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Watch Video</a>' ?></button>
                         </div>
                     <?php } ?>
                     <!-- end of single post -->
@@ -135,7 +135,7 @@ require_once("include/initialize.php");
                                 <p><?php
                                     echo '<td>' . $result->LessonTitle . '</td>'; ?></p>
                             </div>
-                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Read All</a>' ?></button>
+                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Watch Video</a>' ?></button>
                         </div>
                     <?php } ?>
 
@@ -161,7 +161,7 @@ require_once("include/initialize.php");
                                 <p><?php
                                     echo '<td>' . $result->LessonTitle . '</td>'; ?></p>
                             </div>
-                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Read All</a>' ?></button>
+                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Watch Video</a>' ?></button>
                         </div>
                     <?php } ?>
                     <!-- end of single post -->
@@ -188,7 +188,7 @@ require_once("include/initialize.php");
                                 <p><?php
                                     echo '<td>' . $result->LessonTitle . '</td>'; ?></p>
                             </div>
-                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Read All</a>' ?></button>
+                            <button type="button" class="read-btn"><?php echo '<a href="index.php?q=playvideo&id=' . $result->LessonID . '" >Watch Video</a>' ?></button>
                         </div>
                     <?php } ?>
                 </div>
@@ -197,7 +197,7 @@ require_once("include/initialize.php");
     </div>
 
     <!-- JS file -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
