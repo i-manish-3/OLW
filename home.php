@@ -16,6 +16,7 @@ require_once("include/initialize.php");
 </head>
 
 <body>
+
     <div class="main-container">
 
         <h2>Welcome, <?php echo $_SESSION['Fname']; ?>!</h2>

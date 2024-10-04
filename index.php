@@ -11,21 +11,6 @@ switch ($view) {
     $content = 'lesson.php';
     # code...
     break;
-  case 'exercises':
-    $title = "Exercises";
-    $content = 'exercises.php';
-    # code...
-    break;
-  case 'download':
-    $title = "Download";
-    $content = 'download.php';
-    # code...
-    break;
-  case 'about':
-    $title = "About Us";
-    $content = 'about.php';
-    # code...
-    break;
   case 'learning':
     $title = "learning";
     $content = 'learning.php';
@@ -39,16 +24,6 @@ switch ($view) {
   case 'viewpdf':
     $title = "Play Video";
     $content = 'viewpdf.php';
-    # code...
-    break;
-  case 'question':
-    $title = "Question";
-    $content = 'question.php';
-    # code...
-    break;
-  case 'quizresult':
-    $title = "Result";
-    $content = 'quizresult.php';
     # code...
     break;
   default:
